@@ -22,8 +22,7 @@ or
 put C:\Python27\test.txt
 ```
 
-- **get <file\>** : Copy a file from a server to a client (get), which also takes as an argument the full
-path to a file *<file\>* on the server.
+- **get <file\>** : Copy a file from a server to a client, which also takes as an argument the full path to a file *<file\>* on the server.
 ```
 get test.txt
 or
