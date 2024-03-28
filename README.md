@@ -84,11 +84,13 @@ We do this using "stop-and-wait" reliability - implementing a series of checks o
 Note that the user interface and the steps to execute the program are identical between the TCP and UDP versions, just specify the corresponding file name.
 
 To start the server, you must specify the port number as a command line argument. For example, for port number 8080:
->C:\Users\yourName\yourDirectory> python server_udp.py 8080
-
+```
+C:\Users\yourName\yourDirectory> python server_udp.py 8080
+```
 To start the client, you must specify the server IP address followed by the server port number as command line arguments. For example, for server IP 127.0.0.1 and server port number 8080:
+```
 >C:\Users\yourName\yourDirectory> python client_udp.py 127.0.0.1 8080
-
+```
 Also note that the server must be running before trying to start the client.
 
 <p align="center">
