@@ -16,33 +16,23 @@ Once the server is done anonymizing, it will issue a message to the user indicat
 
 **Supported Commands:**
 - **put <file\>** : Copy a file from the client to the server, which takes as an input argument the full path to a file *<file\>* on the client.
-
->**Example execution:**
->
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;put test.txt
->
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or
->
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;put C:\Python27\test.txt
->
+```
+put test.txt
+or
+put C:\Python27\test.txt
+```
 
 - **get <file\>** : Copy a file from a server to a client (get), which also takes as an argument the full
-path to a file *<file\>* on the server. 
-
->**Example execution:**
->
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;get test.txt
->
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or
->
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;get C:\Python27\test.txt
->
-
+path to a file *<file\>* on the server.
+```
+get test.txt
+or
+get C:\Python27\test.txt
+```
 - **keyword <word\> <file\>** : Allow the user to specify a keyword to be anonymized and a target file, in which to anonymize.
->**Example execution:**
->
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;keyword github test.txt
->
+```
+keyword anonymize test.txt
+```
 
 - **quit** : Quit the program per user request.
 
@@ -65,11 +55,21 @@ We do this using "stop-and-wait" reliability - implementing a series of checks o
 
 - Timeouts:
 	- If no data arrives at the receiver within one second of the reception of a LEN message, the receiver terminates, displaying:
-	>*Did not receive data. Terminating.*
+   
+		```
+		Did not receive data. Terminating.
+		```
+
 	- If no ACK is received by the sender within one second of transmitting a data packet, the sender terminates, displaying:
-	>*Did not receive ACK. Terminating.*
+   
+		```
+		Did not receive ACK. Terminating.
+		```
 	- If no data arrives at the receiver within one second of issuing an ACK, the receiver terminates, displaying:
-	>*Data transmission  terminated prematurely.*
+   
+		```
+		Data transmission  terminated prematurely.
+		```
 
 <h2>Languages and Utilities Used</h2>
 
