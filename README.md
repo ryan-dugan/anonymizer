@@ -67,7 +67,7 @@ We do this using "stop-and-wait" reliability - implementing a series of checks o
 	- If no data arrives at the receiver within one second of issuing an ACK, the receiver terminates, displaying:
    
 		```
-		Data transmission  terminated prematurely.
+		Data transmission terminated prematurely.
 		```
 
 <h2>Languages and Utilities Used</h2>
