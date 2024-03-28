@@ -82,7 +82,7 @@ We do this using "stop-and-wait" reliability - implementing a series of checks o
 
 <h2>Program walk-through:</h2>
 
-Note that the user interface is identical between the TCP and UDP versions.
+Note that the user interface and the steps to execute the program are identical between the TCP and UDP versions, just specify the corresponding file name.
 
 To start the server, you must specify the port number as a command line argument. For example, for port number 8080:
 >C:\Users\yourName\yourDirectory> python server_udp.py 8080
